@@ -36,13 +36,24 @@
             </BaseButton>
           </div>
         </div>
-        <div class="hidden sm:block col-span-12 lg:col-span-6">
+        <!-- <div class="hidden sm:block col-span-12 lg:col-span-6">
           <div class="w-full">
             <img
               data-aos="fade-up"
               data-aos-once="true"
               :src="require('~/assets/img/hero-image.webp')"
               class="-mt-4"
+              alt=""
+            />
+          </div>
+        </div> -->
+        <div class="hidden sm:block col-span-12 lg:col-span-6">
+          <div class="w-full">
+            <img
+              data-aos="fade-up"
+              data-aos-once="true"
+              :src="require('~/assets/img/main_one.png')"
+              class="mt-4"
               alt=""
             />
           </div>
