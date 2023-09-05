@@ -152,7 +152,7 @@
     </section>
 
     <!-- Industry-leading security section -->
-    <section class="w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center"><!-- my-24  -->
+    <section class="w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center" style="background-color:#EDFFFD"><!-- my-24  -->
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
         <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-left sm:text-left" style="font-family:'Pretendard'">
           <h1 data-aos="fade-left" data-aos-once="true" class="text-[2.1rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10">
