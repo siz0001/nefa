@@ -1,318 +1,189 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full pb-24">
-      <BaseSection>
-        <div class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
-          <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient font-semibold uppercase"
-            >Sign Up Today</span
+    <section id="hero" class="w-full h-[75vh] sm:h-[175vh] lg:h-[75vh]"><!-- pb-24  -->
+      <BaseSection class="mt-20">
+        <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22 space-y-4 sm:space-y-6 px-6 text-center sm:text-left" style="font-family:'Pretendard';">
+          <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient uppercase" style="color:#2E8BAE; font-weight:700;"
+            >유튜브 영상기반 최신 낚시정보</span
           >
           <h1
             data-aos="fade-right"
             data-aos-once="true"
-            class="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+            class="text-[2.1rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10"
           >
-            The World's <span class="text-header-gradient">Fastest Growing</span> Crypto Web App
+            기존 낚시 어플들과<br>
+            무슨 차이가 있냐구요?
           </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="paragraph hidden sm:block">
-            Buy and sell 200+ cryptocurrencies with 20+ flat currencies using bank transfers or your credit/debit card.
-          </p>
+          <h1
+            data-aos="fade-down"
+            data-aos-once="true"
+            class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10"
+            style="color:#00B3EB; font-weight:900"
+          >
+            낚시인과 크리에이터의 만남<br>
+            유튜브 영상기반 최신 낚시정보<br>
+            <span style="color:#243E90">새로운 낚시어플 FISHING YOU</span>
+          </h1>
           <div
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-delay="700"
             class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2"
           >
-            <BaseButton
-              class="max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] to-[#0c66ee] border border-[#0c66ee] text-white"
-            >
-              Get Started
-            </BaseButton>
-            <BaseButton
-              class="max-w-full px-6 py-4 bg-inherit text-gradient border border-[#0c66ee] flex items-center justify-center"
-            >
-              <span>Download App</span>
-              <ChevronDownIcon :size="20" class="mt-1 text-[#0c66ee]" />
-            </BaseButton>
           </div>
         </div>
-        <!-- <div class="hidden sm:block col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img
-              data-aos="fade-up"
-              data-aos-once="true"
-              :src="require('~/assets/img/hero-image.webp')"
-              class="-mt-4"
-              alt=""
-            />
-          </div>
-        </div> -->
+
         <div class="hidden sm:block col-span-12 lg:col-span-6">
           <div class="w-full">
             <img
               data-aos="fade-up"
               data-aos-once="true"
-              :src="require('~/assets/img/main_one.png')"
+              :src="require('~/assets/img/fishingyou_main/main_one.png')"
               class="mt-4"
               alt=""
             />
           </div>
         </div>
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-1.png')"
-          class="hidden sm:block absolute bottom-12 xl:bottom-16 left-4 xl:left-0 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-2.png')"
-          class="hidden sm:block absolute top-4 sm:top-10 right-64 sm:right-96 xl:right-[32rem] w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/ellipse-3.png')"
-          class="hidden sm:block absolute bottom-56 right-24 w-6"
-        />
-        <img
-          data-aos="fade-up"
-          data-aos-delay="300"
-          :src="require('~/assets/img/pattern/star.png')"
-          class="hidden sm:block absolute top-20 sm:top-28 right-16 lg:right-0 lg:left-[30rem] w-8"
-        />
       </BaseSection>
     </section>
 
-    <!-- Crypto statistic section -->
-    <section
-      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
-    >
-      <div class="w-full flex flex-col lg:flex-row items-center justify-center">
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          title="🔥 Trending"
-          :datasets="trendings"
-          class="xl:border-r border-gray-200 lg:px-8"
-        />
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          data-aos-delay="150"
-          title="🚀 Top Gainers"
-          :datasets="topGainers"
-          class="xl:border-r border-gray-200 lg:px-8"
-        />
-        <LandingCryptoStatistic
-          data-aos="fade-up"
-          data-aos-delay="300"
-          title="💎 Recently Added"
-          :datasets="recents"
-          class="lg:px-8"
-        />
-      </div>
-    </section>
+
 
     <!-- Buy and trade section -->
-    <section class="w-full my-24">
+    <section class="w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center"><!--  my-24  -->
       <BaseSection>
         <LandingBuyTradeImage class="sm:hidden mb-8" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 mt-4 xl:mt-20 space-y-6 px-4">
-          <h2 class="text-4xl font-semibold sm:pr-8 xl:pr-12">
-            Buy & trade on the <br class="hidden sm:block" />
-            original crypto exchange.
-          </h2>
-          <p class="paragraph">
-            Buy now and get 40% extra bonus Minimum pre-sale amount 25 Crypto Coin. We accept BTC crypto-currency
-          </p>
-          <div class="space-y-6 lg:pr-12">
-            <LandingExchange
-              title="Amount"
-              name="amount"
-              type="number"
-              default-value="5.000"
-              :exchange-selected="currencySelected"
-              :exchanges="currencies"
-            />
-            <LandingExchange
-              title="Get"
-              name="get"
-              type="number"
-              default-value="0.10901"
-              :exchange-selected="cryptoSelected"
-              :exchanges="cryptocurrencies"
-            />
-            <BaseButton class="w-full px-5 py-4 bg-blue-gradient text-white text-base font-medium">Buy Now</BaseButton>
+
+        <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" />
+        <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-right sm:text-right" style="font-family: 'Pretendard';">
+
+          <h1
+            data-aos="fade-left"
+            data-aos-once="true"
+            class="text-[2.1rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+          >
+            이곳에서 낚시 포인트가<br>
+            어디에 있을지 궁금하다면?
+          </h1>
+          <h1
+            data-aos="fade-down"
+            data-aos-once="true"
+            class="text-[2.5rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+            style="font-weight:900; color:#00B3EB"
+          >
+            위치기반 최신 낚시 정보는<br>
+            <span style="color:#243E90">새로운 낚시어플 FISHING YOU</span>
+          </h1>
+          <div
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-delay="700"
+            class="flex flex-col space-y-4 sm:pr-8 xl:pr-10 mt-2"
+          >
+          <p>현재위치에서 다른 사람들은 어떻게 낚시 하는지<br>
+          어떤 어종이 잡히는지, 어느 포인트가 있는지<br>
+          어떤 유튜버가 다녀가서 낚시 했는지 궁금하시죠?<br>
+          이제는 피싱유 어플로 확인해 보세요!</p>
+
           </div>
         </div>
-        <LandingBuyTradeImage data-aos="fade-left" class="hidden sm:block" />
+
       </BaseSection>
     </section>
 
-    <!-- Partners section -->
-    <section class="bg-partner relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full px-6 sm:px-0 py-16 flex flex-col items-center justify-center space-y-4 text-center">
-        <h3 data-aos="flip-down" class="text-2xl text-neutral-800 font-semibold">Trusted Partners Worldwide</h3>
-        <p data-aos="flip-down" class="paragraph">We're partners with countless major organisations around the globe</p>
-        <div data-aos="fade-up" class="flex flex-wrap items-center justify-center">
-          <LandingPartnerImage
-            v-for="img in ['clever.png', 'diamon-cutts.png', 'swiss-finance.png', 'gambio.png']"
-            :key="img"
-            :img="img"
-          />
-        </div>
-      </div>
-    </section>
+
 
     <!-- Credit card section -->
-    <section class="w-full my-36">
-      <BaseSection data-aos="fade-down">
-        <div class="col-span-12 lg:col-span-7">
-          <div class="w-full">
-            <img :src="require('~/assets/img/nefa-cc.webp')" class="w-[95%]" alt="" />
+    <section class="w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-36 flex items-center" style="background-color:#F5FFFF "><!-- my-36  -->
+      <BaseSection data-aos="fade-down" class="items-center">
+
+        <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-left sm:text-left" style="font-family: 'Pretendard'">
+          <h1 data-aos="fade-left" data-aos-once="true" class="text-[2.1rem] sm:text-xl xl:text-3xl  leading-tight capitalize sm:pr-8 xl:pr-10">
+            나도 유튜브 보니까<br>
+            낚시가고 싶은데 저기 어디지?
+          </h1>
+          <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10 font-900" style="font-weight:900; color:#00B3EB">
+            낚시인과 크리에이터의 만남<br>
+            <span style="color:#243E90">새로운 낚시어플 FISHING YOU</span>
+          </h1>
+          <div data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="flex flex-col space-y-4 sm:pr-8 xl:pr-10 mt-2">
+            <p>새로운 낚시 정보 뿐만 아니라 기존 어플에는 없는<br>
+              낚시 크리에이터의 영상시청과 정보공유<br>
+              이제는 낚시 크리에이터가 다녀갔던 곳을 손쉽게<br>
+              따라서 가 볼 수가 있습니다. 피싱유와 함께 라면요.
+            </p>
           </div>
         </div>
-        <div class="col-span-12 lg:col-span-5 space-y-6 px-4 sm:px-6 mt-20">
-          <h2 class="text-4xl font-semibold">
-            Introducing the <span class="text-header-gradient">NEFA</span> Credit Card
-          </h2>
-          <p class="paragraph">Subject to cardholder and rewards terms which will be available at application.</p>
-          <ul class="space-y-4 sm:space-y-2">
-            <LandingListItem title="Up to 3% back on purchases" />
-            <LandingListItem title="Earn rewards in bitcoin or any crypto on NEFA" />
-            <LandingListItem title="No annual fee" />
-          </ul>
-          <BaseButton
-            class="w-full sm:max-w-[240px] px-10 py-4 bg-inherit text-gradient border border-[#0c66ee] text-base"
-            >Join the waitlist</BaseButton
-          >
+        <div class="sm:block col-span-12 lg:col-span-6">
+          <div class="w-full">
+            <!-- <img :src="require('~/assets/img/nefa-cc.webp')" class="w-[95%]" alt="" /> -->
+            <img :src="require('~/assets/img/fishingyou_main/main_three.png')" alt="" />
+          </div>
         </div>
       </BaseSection>
     </section>
 
     <!-- Advanced trading tools section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden">
+    <!-- <section class="bg-trading-tools relative max-w-full sm:mx-4 my-20 py-16 shadow rounded-2xl overflow-hidden"> -->
+      <section class="w-full  h-[100vh] sm:h-[200vh] lg:h-[100vh] my-20 flex items-center">
       <div class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6">
         <LandingTradingToolImage class="sm:hidden" />
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8">
-          <h2 class="text-4xl font-semibold">Advanced Trading <span class="text-header-gradient">Tools</span></h2>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Professional Access, Non-stop Availability</h4>
-            <p class="paragraph text-sm xl:text-base">
-              We provide premium access to crypto trading for both individuals and institutions through high liquidity,
-              reliable order execution and constant uptime.
+
+        <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" />
+        <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-right sm:text-right" style="font-family:'Pretendard'">
+          <h1 data-aos="fade-left" data-aos-once="true" class="text-[2.1rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10">
+            가까운 곳에 낚시 할만한 장소가<br>
+            있을까 궁금할 때에는?
+          </h1>
+          <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10" style="font-weight:900; color:#00B3EB">
+            위치기반 최신 낚시 정보는<br>
+            <span style="color:#243E90">새로운 낚시어플 FISHING YOU</span>
+          </h1>
+          <div data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="flex flex-col space-y-4 sm:pr-8 xl:pr-10 mt-2">
+            <p>먼곳이 아니더라도, 우리집 근처에서 혹은 근교에서<br>
+              어떤 어종이 잡히는지, 어느 포인트가 있는지<br>
+              다른사람들은 조과가 얼마나 있었는지 궁금하다면<br>
+              이제는 피싱유 어플로 확인해 보세요!
             </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">A Range of Powerful Apis</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Set up your own trading interface or deploy your algorithmic strategy with our high-performance FIX and
-              HTTP APIs. Connect to our WebSocket for real-time data streaming.
-            </p>
-          </div>
-          <div class="space-y-2">
-            <h4 class="text-lg font-medium">Customer Support</h4>
-            <p class="paragraph text-sm xl:text-base">
-              Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers
-              for partners.
-            </p>
-          </div>
-          <div class="flex flex-col sm:flex-row">
-            <BaseButton class="px-10 py-4 bg-inherit text-gradient border border-[#4A8FF6] text-base">
-              Get Started
-            </BaseButton>
-            <BaseButton class="bg-inherit text-[#4A8FF6] px-10 py-4 text-center underline rounded-full">
-              Learn More
-            </BaseButton>
           </div>
         </div>
-        <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" />
       </div>
     </section>
 
     <!-- Industry-leading security section -->
-    <section class="w-full my-24">
+    <section class="w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center"><!-- my-24  -->
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
+        <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-left sm:text-left" style="font-family:'Pretendard'">
+          <h1 data-aos="fade-left" data-aos-once="true" class="text-[2.1rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10">
+            만능 낚시 어플 피싱유<br>
+            위치기반 낚시와 유튜브까지?
+          </h1>
+          <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10" style="font-weight:900; color:#00B3EB">
+            낚시인과 크리에이터의 만남<br>
+            <span style="color:#243E90">새로운 낚시어플 FISHING YOU</span>
+          </h1>
+          <div data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="flex flex-col space-y-4 sm:pr-8 xl:pr-10 mt-2">
+            <p>기존 어플에 있던 낚시시정보와 더불어 내 위치기반 낚시까지?<br>
+              낚시 크리에이터의 영상시청과 정보공유도 가능해요.<br>
+              기본 낚시 정보제공에 이은 영상시청과 위치기반 근교 낚시정보까지<br>
+              이제 낚시어플은 피싱유 하나로 완벽합니다.
+            </p>
+          </div>
+        </div>
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
           <div class="w-full">
-            <img :src="require('~/assets/img/industry-leading-security.webp')" class="w-full" alt="" />
+            <img :src="require('~/assets/img/fishingyou_main/main_five.png')" class="w-full" alt="" />
+            <!-- <img :src="require('~/assets/img/industry-leading-security.webp')" class="w-full" alt="" /> -->
           </div>
         </div>
-        <div data-aos="fade-left" class="col-span-12 lg:col-span-5 space-y-8 sm:space-y-6 mt-8 xl:px-8">
-          <h2 class="text-4xl font-semibold">Industry-leading security from day one</h2>
-          <ul class="space-y-8 sm:space-y-4">
-            <LandingListItem title="Safety, security and compliance">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                NEFA is a licensed New York trust company that undergoes regular bank exams and is subject to the
-                cybersecurity audits conducted by the New York Department of Financial Services.
-                <span class="underline">Learn more</span> about our commitment to security.
-              </p>
-            </LandingListItem>
-            <LandingListItem title="Hardware security keys">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                With NEFA you can secure your account with a hardware security key via WebAuthn.
-              </p>
-            </LandingListItem>
-            <LandingListItem title="SOC Certifications">
-              <p class="text-sm text-gray-700 leading-relaxed">
-                NEFA is <span class="underline">SOC 1 Type 2</span> and
-                <span class="underline">SOC 2 Type 2</span> compliant. We are the world’s first cryptocurrency exchange
-                and custodian to complete these exams.
-              </p>
-            </LandingListItem>
-          </ul>
-        </div>
+
       </div>
     </section>
-
-    <!-- Getting started section -->
-    <section class="bg-trading-tools relative max-w-full sm:mx-4 xl:mx-10 my-24 shadow sm:rounded-2xl overflow-hidden">
-      <div class="w-full py-16 flex flex-col items-center">
-        <h2 data-aos="flip-down" class="text-3xl sm:text-4xl font-semibold text-center">
-          Get started in just a few minutes
-        </h2>
-        <div
-          data-aos="fade-up"
-          class="relative w-full flex flex-col lg:flex-row items-center justify-between space-y-12 lg:space-y-0 px-4 xl:px-10 mt-16 sm:mt-8"
-        >
-          <LandingStep v-for="step in steps" :key="step.title" :step="step" />
-          <img
-            :src="require('~/assets/img/getting-started/arrow.png')"
-            class="hidden lg:inline-block absolute top-32 left-64 xl:left-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-          <img
-            :src="require('~/assets/img/getting-started/arrow.png')"
-            class="hidden lg:inline-block absolute top-32 right-64 xl:right-[22rem] w-24 xl:w-[9.5rem]"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ section -->
-    <section class="w-full my-24">
-      <BaseSection>
-        <div data-aos="fade-right" data-aos-delay="150" class="col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img :src="require('~/assets/img/faq.webp')" class="w-full" alt="" />
-          </div>
-        </div>
-        <div data-aos="fade-left" data-aos-delay="150" class="col-span-12 lg:col-span-6 px-4 sm:px-6 mt-8">
-          <span class="text-base text-gradient font-semibold uppercase mb-4 sm:mb-2">Support</span>
-          <h2 class="text-3xl sm:text-4xl font-semibold mb-10 sm:mb-6">Frequently asked questions</h2>
-
-          <ul class="shadow-box">
-            <BaseAccordion v-for="(accordion, index) in accordions" :key="index" :accordion="accordion" />
-          </ul>
-        </div>
-      </BaseSection>
-    </section>
-
-    <div class="w-full my-10 flex justify-center">
+    <div class="w-full mb-10 flex justify-center">
       <a
         v-smooth-scroll
-        data-aos="flip-down"
+        data-aos="flip-up"
         data-aos-delay="150"
         href="#navbar"
         class="px-6 py-3 flex items-center space-x-2 bg-[#FAFAFA] hover:bg-gray-100 hover:shadow-md border border-[#DDDDDD] rounded-md text-gray-700"
