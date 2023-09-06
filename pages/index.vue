@@ -185,8 +185,11 @@
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
 
         <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
-          <div class="w-full">
-            <img :src="require('~/assets/img/fishingyou_main/main_five.png')" class="w-full" alt="" />
+          <div class="w-full flex flex-row">
+            <video ref="video" src='' >
+
+            </video>
+            <img :src="require('~/assets/img/fishingyou_main/fishing_rod.png')"  alt="" />
             <!-- <img :src="require('~/assets/img/industry-leading-security.webp')" class="w-full" alt="" /> -->
           </div>
         </div>
