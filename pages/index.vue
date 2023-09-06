@@ -61,7 +61,7 @@
           <h1
             data-aos="fade-left"
             data-aos-once="true"
-            class="text-[2.1rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+            class="text-[2.1rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10"
           >
             이곳에서 낚시 포인트가<br>
             어디에 있을지 궁금하다면?
@@ -69,7 +69,7 @@
           <h1
             data-aos="fade-down"
             data-aos-once="true"
-            class="text-[2.5rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10"
+            class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10"
             style="font-weight:900; color:#00B3EB"
           >
             위치기반 최신 낚시 정보는<br>
@@ -132,11 +132,11 @@
 
         <LandingTradingToolImage data-aos="fade-left" class="hidden sm:block" />
         <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-right sm:text-right" style="font-family:'Pretendard'">
-          <h1 data-aos="fade-left" data-aos-once="true" class="text-[2.1rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10">
+          <h1 data-aos="fade-left" data-aos-once="true" class="text-[2.1rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10">
             가까운 곳에 낚시 할만한 장소가<br>
             있을까 궁금할 때에는?
           </h1>
-          <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10" style="font-weight:900; color:#00B3EB">
+          <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10" style="font-weight:900; color:#00B3EB">
             위치기반 최신 낚시 정보는<br>
             <span style="color:#243E90">새로운 낚시어플 FISHING YOU</span>
           </h1>
@@ -155,11 +155,11 @@
     <section class="w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center" style="background-color:#EDFFFD"><!-- my-24  -->
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
         <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-left sm:text-left" style="font-family:'Pretendard'">
-          <h1 data-aos="fade-left" data-aos-once="true" class="text-[2.1rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10">
+          <h1 data-aos="fade-left" data-aos-once="true" class="text-[2.1rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10">
             만능 낚시 어플 피싱유<br>
             위치기반 낚시와 유튜브까지?
           </h1>
-          <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10" style="font-weight:900; color:#00B3EB">
+          <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10" style="font-weight:900; color:#00B3EB">
             낚시인과 크리에이터의 만남<br>
             <span style="color:#243E90">새로운 낚시어플 FISHING YOU</span>
           </h1>
@@ -180,6 +180,39 @@
 
       </div>
     </section>
+
+    <section class="bg-color w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center"><!-- my-24  -->
+      <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
+
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
+          <div class="w-full">
+            <img :src="require('~/assets/img/fishingyou_main/main_five.png')" class="w-full" alt="" />
+            <!-- <img :src="require('~/assets/img/industry-leading-security.webp')" class="w-full" alt="" /> -->
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-right sm:text-right" style="font-family:'Pretendard'">
+          <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10 text-app-gradient" style="font-weight:900;">
+            특별한 낚시어플 피싱유<br>
+
+          <span class="text-youtube-gradient">이제 유튜브로 피싱유를 확인해 보세요</span>
+
+          </h1>
+          <div data-aos="fade-up" data-aos-once="true" data-aos-delay="700" class="flex flex-col space-y-4 sm:pr-8 xl:pr-10 mt-2">
+            <p>낚시 조과, 계절별로 잘 잡히는 어종, 미끼, 채비<br>
+            서해, 동해, 남해, 배낚시, 방파제 낚시, 낚시터<br>
+            기본적인 낚시 정보를 알려주는 어플은 많았습니다.
+            </p>
+            <p>낚시인과 크리에이터의 만남, 피싱유 어플은<br>
+            현재 위치에서 다른 사람들은 어떻게 낚시하는지<br>
+            어떤 어종이 잡히는지, 어느 포인트가 있는지<br>
+            어떤 유튜버가 낚시했는지를 알 수 있습니다.<br>
+            이제는 피싱유 어플로 확인해 보세요!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="w-full mb-10 flex justify-center">
       <a
         v-smooth-scroll
@@ -392,5 +425,21 @@ export default {
 }
 .max-h-0 {
   max-height: 0;
+}
+.bg-color {
+  /* background: linear-gradient(180deg, #FFF 65%, #48C6E2 73%, #4AC5E2 77%, #89B4DB 83.5%,  #99AED9 100%) */
+  background: linear-gradient(180deg, rgba(72, 198, 226, 0), rgba(74, 197, 226, 0.01), rgba(137, 180, 219, 0.34), rgba(153, 174, 217, 0.5))
+}
+.text-app-gradient {
+  background: linear-gradient(0deg, rgba(167, 198, 226, 1), rgba(151, 194, 227, 1), rgba(112, 186, 228, 1), rgba(77, 181, 230, 1), rgba(43, 178, 231, 1), rgba(22, 177, 231, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.text-youtube-gradient {
+  background: linear-gradient(0deg, rgba(23, 136, 202, 1) 50%, rgba(36, 64, 143, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 </style>

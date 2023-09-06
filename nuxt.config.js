@@ -1,6 +1,6 @@
 export default {
   head: {
-    title: 'NEFA',
+    title: 'FishingYou',
     htmlAttrs: {
       lang: 'en',
     },
