@@ -231,7 +231,7 @@
 
     <section class="bg-color w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center">
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-6" style="width:596px">
             <video controls  class="video">
               <source src="">
             </video>
@@ -457,7 +457,7 @@ export default {
   position: absolute;
   z-index: -1;
   bottom: 0;
-  right:-55%;
+  right:-45%;
 }
 .text-header-gradient {
   background: rgb(57, 132, 244);
