@@ -1,9 +1,9 @@
 <template>
   <div class="w-full">
     <!-- Hero section -->
-    <section id="hero" class="w-full h-[75vh] sm:h-[175vh] lg:h-[75vh]"><!-- pb-24  -->
-      <BaseSection class="mt-20">
-        <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22 space-y-4 sm:space-y-6 px-6 text-center sm:text-left" style="font-family:'Pretendard';">
+    <section class="w-full h-[70vh] sm:h-[170vh] lg:h-[70vh] flex items-center"><!-- pb-24  -->
+      <BaseSection>
+        <div class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left" style="font-family:'Pretendard';">
           <span data-aos="fade-right" data-aos-once="true" class="text-base text-gradient uppercase" style="color:#2E8BAE; font-weight:700;"
             >유튜브 영상기반 최신 낚시정보</span
           >
@@ -48,7 +48,55 @@
       </BaseSection>
     </section>
 
+    <section
+      class="max-w-screen-xl mx-2 sm:mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] sm:rounded-xl bg-white shadow-lg sm:shadow-md transform lg:-translate-y-12"
+    >
+      <div class="w-full flex flex-col lg:flex-row items-start justify-center">
+        <LandingCryptoStatistic
+          data-aos="fade-up"
+          title="ℹ️ 정보 수집"
+          :datasets="informationCollection"
+          class="xl:border-r border-gray-200 lg:px-8"
+        />
+        <LandingCryptoStatistic
+          data-aos="fade-up"
+          data-aos-delay="150"
+          title="🧳 준비"
+          :datasets="preparation"
+          class="xl:border-r border-gray-200 lg:px-8"
+        />
+        <LandingCryptoStatistic
+          data-aos="fade-up"
+          data-aos-delay="300"
+          title="🚗 이동"
+          :datasets="movement"
+          class="lg:px-8"
+        />
+        <LandingCryptoStatistic
+          data-aos="fade-up"
+          data-aos-delay="300"
+          title="🎣 낚시"
+          :datasets="fishingRod"
+          class="lg:px-8"
+        />
+      </div>
+    </section>
 
+    <section class="bg-trading-tools  relative max-w-full sm:mx-6 my-24 shadow sm:rounded-2xl overflow-hidden">
+      <div class="w-full px-6 sm:px-0 py-32 flex flex-col items-center justify-center space-y-4 text-center">
+        <div
+            data-aos="flip-down"
+            class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10"
+            style="color:#00B3EB; font-weight:900; font-size:38px;"
+          >해결책은 FISHING YOU</div>
+          <div
+            data-aos="flip-down"
+            class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10"
+            style="color:#243E90; font-weight:900; font-size:38px;"
+          >새로운 낚시 어플 FISINGYOU</div>
+
+      </div>
+    </section>
 
     <!-- Buy and trade section -->
     <section class="w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center"><!--  my-24  -->
@@ -181,18 +229,16 @@
       </div>
     </section>
 
-    <section class="bg-color w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center"><!-- my-24  -->
+    <section class="bg-color w-full h-[100vh] sm:h-[200vh] lg:h-[100vh] my-24 flex items-center">
       <div class="relative max-w-screen-xl px-8 mx-auto grid grid-cols-12 gap-x-6">
-
-        <div data-aos="fade-right" class="col-span-12 lg:col-span-6">
-          <div class="w-full flex flex-row">
-            <video ref="video" src='' >
-
+        <div data-aos="fade-right" class="col-span-12 lg:col-span-6" style="width:596px">
+            <video controls  class="video">
+              <source src="">
             </video>
-            <img :src="require('~/assets/img/fishingyou_main/fishing_rod.png')"  alt="" />
+            <img class="fishing-rod" :src="require('~/assets/img/fishingyou_main/fishing_rod.png')"  alt="" />
             <!-- <img :src="require('~/assets/img/industry-leading-security.webp')" class="w-full" alt="" /> -->
-          </div>
         </div>
+
         <div class="col-span-12 lg:col-span-6 mt-24 xl:mt-22  space-y-4 sm:space-y-6 px-6 text-right sm:text-right" style="font-family:'Pretendard'">
           <h1 data-aos="fade-down" data-aos-once="true" class="text-[2.5rem] sm:text-xl xl:text-3xl leading-tight capitalize sm:pr-8 xl:pr-10 text-app-gradient" style="font-weight:900;">
             특별한 낚시어플 피싱유<br>
@@ -261,106 +307,99 @@ export default {
           name: 'BTC',
         },
       ],
-      trendings: [
+      informationCollection: [
         {
           id: 1,
-          name: 'Bitcoin',
-          price: 43180.13,
-          logo: 'bitcoin.png',
-          increase: true,
-          data: [40, 35, 60, 75, 60, 75, 50],
+          text: '인터넷 검색',
         },
         {
           id: 2,
-          name: 'Ethereum',
-          price: 3480.65,
-          logo: 'ethereum.png',
-          increase: false,
-          data: [25, 30, 60, 50, 80, 55, 80],
+          text: '지인 정보',
         },
         {
           id: 3,
-          name: 'Solana',
-          price: 150.2,
-          logo: 'solana.png',
-          increase: true,
-          data: [40, 45, 40, 80, 50, 60, 35],
+          text: '단체 톡방',
         },
         {
           id: 4,
-          name: 'Dogecoin',
-          price: 0.1572,
-          logo: 'dogecoin.png',
-          increase: true,
-          data: [35, 70, 60, 80, 50, 60, 40],
+          text: '낚시 서적 등',
+        },
+        {
+          id: 5,
+          detail: '비용 1 ~ 5만',
+        },
+
+        {
+          id: 6,
+          detail: '시간 1 ~ 3일',
         },
       ],
-      topGainers: [
+      preparation: [
         {
           id: 1,
-          name: 'PAPPAY',
-          price: 0.00374,
-          logo: 'pappay.png',
-          increase: true,
-          data: [30, 50, 45, 60, 70, 40, 45],
+          text: '음식',
         },
         {
           id: 2,
-          name: 'Bitcoin Asia',
-          price: 0.02096,
-          logo: 'bitcoin-asia.png',
-          increase: true,
-          data: [25, 60, 50, 60, 35, 50, 70],
+          text: '장비',
         },
         {
           id: 3,
-          name: 'MoonRock',
-          price: 0.004907,
-          logo: 'moonrock.png',
-          increase: true,
-          data: [40, 35, 40, 25, 50, 70, 45],
+          text: '채비',
         },
         {
           id: 4,
-          name: 'NinjaFloki',
-          price: 0.000123,
-          logo: 'ninjafloki.png',
-          increase: true,
-          data: [45, 35, 40, 30, 25, 45, 35],
+          text: '미끼',
+        },
+        {
+          id: 5,
+          text: '기타',
+        },
+        {
+          id: 6,
+          detail: '비용 1 ~ 10만',
+        },
+
+        {
+          id: 7,
+          detail: '시간 1 ~ 2일',
         },
       ],
-      recents: [
+      movement: [
         {
           id: 1,
-          name: 'MetaCraft',
-          price: 0.0608,
-          logo: 'metacraft.png',
-          increase: false,
-          data: [40, 50, 45, 60, 35, 40, 45],
+          text: '기름값',
         },
         {
           id: 2,
-          name: 'Frog',
-          price: 0.5875,
-          logo: 'frog.png',
-          increase: false,
-          data: [25, 50, 45, 48, 40, 60, 45],
+          text: '배값',
         },
         {
           id: 3,
-          name: 'Musk Doge',
-          price: 0.04041,
-          logo: 'musk-doge.png',
-          increase: true,
-          data: [25, 35, 60, 45, 50, 45, 45],
+          text: '톨게이트 비용',
         },
         {
           id: 4,
-          name: '2SHARE',
-          price: 1366.24,
-          logo: '2share.png',
-          increase: true,
-          data: [35, 30, 60, 50, 35, 45, 40],
+          text: '식사비',
+        },
+        {
+          id: 5,
+          text: '휴게소 이용비',
+        },
+        {
+          id: 6,
+          detail: '비용 5 ~ 20만',
+        },
+
+        {
+          id: 7,
+          detail: '시간 1 ~ 5시간',
+        },
+      ],
+      fishingRod: [
+        {
+          id: 1,
+          detail: '소요시간: 1시간 ~ 1일',
         },
       ],
       accordions: [
@@ -410,6 +449,16 @@ export default {
 }
 </script>
 <style scoped>
+.video {
+  width: 500px;
+  height: 400px;
+}
+.fishing-rod {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right:-45%;
+}
 .text-header-gradient {
   background: rgb(57, 132, 244);
   background: linear-gradient(169.4deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%);
@@ -420,6 +469,7 @@ export default {
   background: url('../assets/img/partner/background.png');
   background-size: cover;
   background-position: center;
+
 }
 .bg-trading-tools {
   background: url('../assets/img/bg-trading-tools.webp');

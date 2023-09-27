@@ -1,19 +1,28 @@
 <template>
-  <div class="w-full lg:w-1/3 mt-6 lg:mt-0 overflow-hidden space-y-6" v-bind="$attrs">
-    <div class="w-full flex items-center justify-between">
-      <span class="font-medium">{{ title }}</span>
-      <button
+  <div class="w-full lg:w-1/3 mt-6 lg:mt-0 overflow-hidden space-y-6 flex flex-col" v-bind="$attrs"  >
+    <div class="w-full flex items-center justify-center" style="font-size:18px">
+      {{ title }}
+      <!-- <button
         href="#"
         class="px-3 py-1 text-sm font-medium text-blue-500 flex items-center space-x-1 rounded-md hover:bg-blue-50 transition duration-300"
       >
         <span>More</span>
         <ChevronRightIcon :size="16" />
-      </button>
+      </button> -->
     </div>
-    <div class="flex flex-col">
-      <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="flex flex-col justify-center">
+      <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8" style="font-size:16px">
         <div class="px-2 sm:px-6 py-2 align-middle inline-block min-w-full overflow-hidden">
-          <table class="min-w-full">
+          <div v-for="data in datasets" :key="data.id" class="text-center">
+            {{ data.text }}
+          </div>
+        </div>
+        <div class="px-2 sm:px-6 py-2 align-middle inline-block min-w-full overflow-hidden">
+          <div v-for="data in datasets" :key="data.id" class="text-center" style="font-weight:700">
+            {{ data.detail }}
+          </div>
+        </div>
+          <!-- <table class="min-w-full">
             <thead>
               <tr>
                 <th class="text-left text-sm font-medium text-gray-500">Name</th>
@@ -43,8 +52,8 @@
                 </td>
               </tr>
             </tbody>
-          </table>
-        </div>
+          </table> -->
+
       </div>
     </div>
   </div>
